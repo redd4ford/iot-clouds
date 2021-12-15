@@ -1,0 +1,16 @@
+{
+  "name": "sensors",
+  "version": "1.0.0",
+  "description": "I'm tired because I moved out & have a lot of stuff to do at my new place, so I'm starting this lab at 5:42 AM because I was busy unpacking for 7 hours straight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viktoriia Yehorova",
+  "license": "ISC",
+  "dependencies": {
+    "azure-iot-device": "^1.17.8",
+    "azure-iot-device-http": "^1.13.8",
+    "azure-iot-device-mqtt": "^1.15.8"
+  }
+}
