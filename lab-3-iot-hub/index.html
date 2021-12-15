@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flightradar (kind of)</title>
+  <meta name="description" content="A simple website that fetches a serverless API">
+  <meta name="author" content="Viktoriia Yehorova / 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+  crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+  integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<header>
+  <div class="navbar navbar-dark bg-dark box-shadow">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand justify-content-between align-items-center">
+        <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-speedometer2" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </svg>
+        <strong>Water Quality Tracker</strong>
+      </a>
+
+  </div>
+</header>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <section class="jumbotron bg-light text-center">
+    <div class="container">
+      <p class="lead" style="max-width: 50%; margin: auto; padding-top: 2rem;">
+        I usually post a joke in here just to make our professors feel a bit better,
+        but the only joke I can think of is me making this lab for 26 hours straight
+      </p>
+    </div>
+  </section>
+
+  <hr/>
+
+  <!--   COUNTER   -->
+
+  <div class="jumbotron bg-dark text-center" style="padding-bottom: 0px; max-width: 50%; color: white; margin: auto;">
+
+    <!--   ITEMS COUNTER   -->
+
+    <p id="counter">
+    </p>
+
+  </div>
+
+  <hr/>
+
+  <!--   DISPLAY   -->
+
+  <div class="album py-5 bg-light" style="width: 100%; margin: auto; margin-top: 15px; border: 1px #c2c2c2; border-radius: 5px;">
+    <div class="container">
+
+      <div id="data_blocks" class="row">
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
